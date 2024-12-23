@@ -1,0 +1,23 @@
+<suite name="TestSuite" thread-count="2" parallel="tests">
+    <listeners>
+        <listener class-name="test.com.automation.listeners.TestListener"/>
+        <listener class-name="test.com.automation.listeners.RetryAnalyzerForClass"/>
+    </listeners>
+    <test name="TestOne">
+        <parameter name="deviceName" value="iPhone 15 Pro"/>
+        <parameter name="udid" value="F3479EDA-69B3-4EE3-BA5F-A5BC08430388"/>
+        <parameter name="wdaLocalPort" value="8100"/>
+        <classes>
+            <class name="test.com.automation.test.TestCase"/>
+        </classes>
+    </test>
+
+<!--    <test name="TestTwo">-->
+<!--        <parameter name="deviceName" value="iPhone SE (3rd generation)"/>-->
+<!--        <parameter name="udid" value="EA5DA7E0-1C99-4E92-A602-5AF89878DBCE"/>-->
+<!--        <parameter name="wdaLocalPort" value="8101"/>-->
+<!--        <classes>-->
+<!--            <class name="test.com.automation.test.TestCase"/>-->
+<!--        </classes>-->
+<!--    </test>-->
+</suite>
